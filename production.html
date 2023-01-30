@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>production</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1008fdb1f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/frontbg.jpg) center/cover no-repeat fixed;
+        }
+        #tube .container{
+            margin: 1rem;
+        }
+        .youtube-links h1{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 2rem;
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        .youtube-links h2{
+            margin-top: 2px;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-align: center;
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+
+        .youtube-links{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #tube .frames{
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 2rem;
+            margin-left: 3rem;
+            margin-right: 1rem;
+        }
+
+        #tube .frames > div{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #tube .frames p{
+            color: #fff;
+            margin-top: 1rem;
+        }
+
+        @media screen and (min-width: 400px){
+            #tube .youtube-links h1{
+                font-size: 1.5rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #tube .youtube-links h2{
+                font-size: .7rem;
+                text-align: center;
+                transition: all 0.35s ease;
+            }
+            #tube .frames{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 560px){
+            #tube .youtube-links h1{
+                font-size: 1.7rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #tube .youtube-links h2{
+                font-size: .8rem;
+                text-align: center;
+                transition: all 0.35s ease;
+            }
+            #tube .frames{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 760px){
+            #tube .youtube-links h1{
+                font-size: 1.9rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #tube .youtube-links h2{
+                font-size: 1rem;
+                text-align: center;
+                transition: all 0.35s ease;
+            }
+            #tube .frames{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 820px){
+            #tube .youtube-links h1{
+                font-size: 1.9rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #tube .youtube-links h2{
+                font-size: 1rem;
+                text-align: center;
+                transition: all 0.35s ease;
+            }
+            #tube .frames{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 960px){
+            #tube .youtube-links h1{
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #tube .youtube-links h2{
+                font-size: 1rem;
+                text-align: center;
+                transition: all 0.35s ease;
+            }
+            #tube .frames{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 1100px){
+            #tube .youtube-links h1{
+                font-size: 2.2rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #tube .youtube-links h2{
+                font-size: 1rem;
+                text-align: center;
+                transition: all 0.35s ease;
+            }
+            #tube .frames{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--- navbar --->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#" class="navbar-links"><img src="img/nevoa0.png" alt="logo"></a></li>
+
+                <li class="navbar-item">
+                    <a href="index.html" id="#home" class="navbar-links">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="service.html" id="#services" class="navbar-links">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="production.html" id="#production" class="navbar-links">Production</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="index.html#contact" class="button">Let's Talk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--- end of navbar --->
+
+    <!-- youTube -->
+    <div id="tube" class="container">
+        <div class="youtube-links">
+            <h1>Our Studio YouTube Channels</h1>
+            <h2><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000" data-words='["Lease or Purchase your beat today..."]'></span></h2>
+        </div>
+        <div class="frames">
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/xHPXMUK39uk" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Dancehall Pop Type Beat</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/xOZN1vaEpZQ" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Gengetone Instrumental</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/9eVzrydLBEc" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>UK Drill Type Beat 2022</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/BPWOenmEO8k?" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Hard Trap Beat</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/XYl9TEBoCWk" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Afroswing Instrumental Beat</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/nY78abul94U" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Afrobeat x Dancehall Type Beat "Baba"</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/awz8lmghIdE" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Audio Visualizer</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/ItOUnEiE8-E" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Audio Visualizer</p>
+            </div>
+            <div>
+                <iframe width="360" height="315" src="https://www.youtube.com/embed/N2qfwEXA3FI" autoplay="allow; encrypted media" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Bora - Sonko ft Nuclear</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of YouTube -->
+
+    <!---- footer --->
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link--wrapper">
+                <div class="footer-link--items">
+                    <h2>About Us</h2>
+                    <a href="service.html">Audio Production</a>
+                    <a href="service.html">Video Production </a>
+                    <a href="service.html">Lessons & Training</a>
+                    <a href="service.html">DJ Drops</a>
+                    <a href="service.html">Voice Overs</a>
+                </div>
+                <div class="footer-link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/nevoaentertainment254">Instagram</a>
+                    <a href="https://www.facebook.com/@newvibesofafrica1194">Facebook</a>
+                    <a href="https://www.youtube.com/@dev2545">Dev254 YouTube</a>
+                    <a href="https://www.youtube.com/@newvibesofafrica1194">NEVOA YouTube</a>
+                </div>
+                <div class="footer-link--items">
+                    <h2>Contact Us</h2>
+                    <a href="index.html#contact"> +254 112 032 452 | +254 756 593 596</a>
+                    <a href="index.html#contact">nevoaentertainment@gmail.com</a>
+                    <a href="index.html#contact">Dagoretti South</a>
+                    <a href="index.html#contact">Satellite Kabiria</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="social-media--wrap">
+                <div class="footer-logo">
+                    <a href="#home" id="footer-logo"><img src="img/nevoa1.png" alt="logo"></a>
+                </div>
+                <p class="website-rights">&copy; 2023 NEVOA ENT. | All Rights Reserved.</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/nevoaentertainment254" class="social-icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nevoaentertainment254" class="social-icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@dev2545" class="social-icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@newvibesofafrica1194" class="social-icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- end of footer --->
+
+    <script src="js/app.js"></script>
+    <script src="typewriting-master/typewriting.js"></script>
+
+</body>
+</html>

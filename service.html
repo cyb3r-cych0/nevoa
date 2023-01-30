@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>production</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1008fdb1f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/headphones.jpg) center/cover no-repeat fixed;
+        }
+
+        /* work */
+
+        #work h1{
+            font-size: 2.5rem;
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+            background-size: 100%;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            text-align: center;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        #work h3{
+            color: #ff8177;
+            font-weight: 300;
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+            text-transform: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+        .work-top{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 1rem;
+        }
+        .work-top li{
+            margin-bottom: 1.5rem;
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+        }
+        .work-top li i{
+            color: #4837ff;
+        }
+        .work-top .lead{
+            color: #fff;
+            font-weight: 300;
+            text-transform: 1rem;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+        .work-bottom{
+            margin-top: 4rem;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 1rem;
+        }
+
+        .work-bottom > div .icon img{
+            width: 100px;
+            margin: 0 auto 1.7rem auto;
+        }
+
+        @media screen and (min-width: 400px){
+            #work h1{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .work-top{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .work-bottom{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #work h3{
+                font-size: 1rem;
+            }
+            #insta .title h1{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 560px){
+            #work h1{
+                font-size: 1.7rem;
+                text-align: center;
+            }
+            .work-top{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .work-bottom{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #work h3{
+                font-size: 1.2rem;
+            }
+            #insta .title h1{
+                font-size: 1.7rem;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 760px){
+            #work h1{
+                font-size: 1.9rem;
+                text-align: center;
+            }
+            .work-top{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .work-bottom{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #work h3{
+                font-size: 1.5rem;
+            }
+            #insta .title h1{
+                font-size: 1.9rem;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 820px){
+            #work h1{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .work-top{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .work-bottom{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #work h3{
+                font-size: 1.5rem;
+            }
+            #insta .title h1{
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 960px){
+            #work h1{
+                font-size: 2.2rem;
+                text-align: center;
+            }
+            .work-top{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .work-bottom{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+            #work h3{
+                font-size: 1.5rem;
+            }
+            #insta .title h1{
+                font-size: 2.2rem;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 1100px){
+            #work h1{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .work-top{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .work-bottom{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+            #work h3{
+                font-size: 1.5rem;
+            }
+            #insta .title h1{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!--- navbar --->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#" class="navbar-links"><img src="img/nevoa0.png" alt="logo"></a></li>
+
+                <li class="navbar-item">
+                    <a href="index.html" id="#home" class="navbar-links">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="service.html" id="#service" class="navbar-links">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="production.html" id="#production" class="navbar-links">Production</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="index.html#contact" class="button">Let's Talk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--- end of navbar --->
+
+    <!------ work section ------->
+    <section id="work" class="vh-100 flex py-7">
+        <div class="container">
+            <div class="work-content">
+                <div class="title">
+                    <h1>Our Studio Services</h1>
+                </div>
+                <ul class="work-top grid">
+                    <li class="lead"><i class="fas fa-dot-circle"></i> Get first class DJ Drops from our studio</li>
+                    <li class="lead"><i class="fas fa-dot-circle"></i> We offer Production Training for individual with interest on learning audio, video or music production</li>
+                    <li class="lead"><i class="fas fa-dot-circle"></i> Our studio provides voice overs to artist and musicians upon requirement</li>
+                    <li class="lead"><i class="fas fa-dot-circle"></i> Our studio has specialized in unquestionable videos produced for our clients</li>
+                </ul>
+
+                <div class="work-bottom grid">
+                    <div><span class="icon"><img src="img/logow.jpg" alt="image"></span><h3>DJ Drops</h3></div>
+                    <div><span class="icon"><img src="img/logow.jpg" alt="image"></span><h3>Production Training</h3></div>
+                    <div><span class="icon"><img src="img/logow.jpg" alt="image"></span><h3>Voice Overs</h3></div>
+                    <div><span class="icon"><img src="img/logow.jpg" alt="image"></span><h3>Video Production</h3></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!------ end of work section ------->
+
+    <!---- instagram section ----->
+    <section id="insta" class="py-7">
+        <div class="container">
+            <div class="insta-content">
+                <div class="title">
+                    <h1>Purchase Your Track Today</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---- end of instagram section ----->
+
+    <!---- footer --->
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link--wrapper">
+                <div class="footer-link--items">
+                    <h2>About Us</h2>
+                    <a href="#work">Audio Production</a>
+                    <a href="#work">Video Production </a>
+                    <a href="#work">Lessons & Training</a>
+                    <a href="#work">DJ Drops</a>
+                    <a href="#work">Voice Overs</a>
+                </div>
+                <div class="footer-link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/nevoaentertainment254">Instagram</a>
+                    <a href="https://www.facebook.com/@newvibesofafrica1194">Facebook</a>
+                    <a href="https://www.youtube.com/@dev2545">Dev254 YouTube</a>
+                    <a href="https://www.youtube.com/@newvibesofafrica1194">NEVOA YouTube</a>
+                </div>
+                <div class="footer-link--items">
+                    <h2>Contact Us</h2>
+                    <a href="index.html#contact"> +254 112 032 452 | +254 756 593 596</a>
+                    <a href="index.html#contact">nevoaentertainment@gmail.com</a>
+                    <a href="index.html#contact">Dagoretti South</a>
+                    <a href="index.html#contact">Satellite Kabiria</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="social-media--wrap">
+                <div class="footer-logo">
+                    <a href="#home" id="footer-logo"><img src="img/nevoa1.png" alt="logo"></a>
+                </div>
+                <p class="website-rights">&copy; 2023 NEVOA ENT. | All Rights Reserved.</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/nevoaentertainment254" class="social-icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nevoaentertainment254" class="social-icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@dev2545" class="social-icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@newvibesofafrica1194" class="social-icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- end of footer --->
+
+    <script src="js/app.js"></script>
+    <script src="typewriting-master/typewriting.js"></script>
+
+</body>
+</html>

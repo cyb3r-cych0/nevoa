@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>nevoa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1008fdb1f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @media screen and (min-width: 400px){
+            #insta .title h1{
+                font-size: 1.5rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .title h2{
+                font-size: 2rem;
+                text-align: center;
+                align-items: center;
+                margin-top: 10px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p{
+                font-size: 1rem;
+                text-align: center;
+                align-items: start;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p:nth-child(2){
+                font-size: 1rem;
+                text-align: center;
+                align-items: start;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .main-btn{
+                font-size: .7rem;
+                text-align: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .form-control{
+                font-size: rem;
+                text-align: center;
+                align-items: start;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            #contact .contact-right img{
+                height:80%;
+                width: 100%;
+                margin-left: 34px;
+                alignment: center;
+                margin-top: 16rem;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left{
+                height: 40vh;
+                width: 70%;
+            }
+            #contact .contact-right{
+                height: 50vh;
+                width: 80%;
+            }
+        }
+
+        @media screen and (min-width: 560px){
+            #insta .title h1{
+                font-size: 1.7rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .title h2{
+                font-size: 2.2rem;
+                text-align: center;
+                align-items: center;
+                margin-top: 10px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p{
+                font-size: .95rem;
+                text-align: center;
+                align-items: start;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p:nth-child(2){
+                font-size: .9rem;
+                text-align: center;
+                align-items: start;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .main-btn{
+                font-size: .9rem;
+                text-align: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .form-control{
+                font-size: .9rem;
+                text-align: center;
+                align-items: start;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            #contact .contact-right img{
+                height:100%;
+                width: 100%;
+                margin-left: 60px;
+                alignment: center;
+                margin-top: 16rem;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left{
+                height: 40vh;
+            }
+            #contact .contact-right{
+                height: 40vh;
+            }
+        }
+
+        @media screen and (min-width: 760px){
+            #insta .title h1{
+                font-size: 1.9rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+            #insta .title h1{
+                font-size: 2.1rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .title h2{
+                font-size: 2.3rem;
+                text-align: center;
+                align-items: center;
+                margin-top: 10px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left{
+                width: 50%;
+            }
+            #contact .contact-left p{
+                font-size: 1.1rem;
+                text-align: center;
+                align-items: center;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p:nth-child(2){
+                font-size: 1.1rem;
+                text-align: center;
+                align-items: center;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .main-btn{
+                font-size: 1rem;
+                text-align: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .form-control{
+                font-size: 1rem;
+                text-align: center;
+                align-items: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+
+            #contact .contact-right img{
+                height: 220px;
+                width: 300px;
+                position: absolute;
+                justify-self: center;
+                margin-top: 14rem;
+                margin-left: 10rem;
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 820px){
+            #insta .title h1{
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 960px){
+            #insta .title h1{
+                font-size: 2.1rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .title h2{
+                font-size: 2.4rem;
+                text-align: center;
+                align-items: center;
+                margin-top: 10px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left{
+                width: 80%;
+            }
+            #contact .contact-left p{
+                font-size: 1.2rem;
+                text-align: center;
+                align-items: center;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p:nth-child(2){
+                font-size: 1.2rem;
+                text-align: center;
+                align-items: center;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .main-btn{
+                font-size: 1.1rem;
+                text-align: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .form-control{
+                font-size: 1rem;
+                text-align: center;
+                align-items: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+
+
+            #contact .contact-right img{
+                height: 300px;
+                width: 380px;
+                margin-left: 60px;
+                alignment: center;
+                margin-top: 10rem;
+                transition: all 0.35s ease;
+            }
+        }
+
+        @media screen and (min-width: 1100px){
+            #insta .title h1{
+                font-size: 2.2rem;
+                text-align: center;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #insta .insta-grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .contact-content{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                transition: all 0.35s ease;
+            }
+            #contact .title h2{
+                font-size: 2.5rem;
+                text-align: center;
+                align-items: center;
+                margin-top: 10px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left{
+                width: 80%;
+            }
+            #contact .contact-left p{
+                font-size: 1.3rem;
+                text-align: center;
+                align-items: center;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left p:nth-child(2){
+                font-size: 1.3rem;
+                text-align: center;
+                align-items: center;
+                margin: 0;
+                margin-top: 5px;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .main-btn{
+                font-size: 1.2rem;
+                text-align: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+            #contact .contact-left .form-control{
+                font-size: 1.1rem;
+                text-align: center;
+                align-items: center;
+                margin-right: 0;
+                margin-left: 0;
+                transition: all 0.35s ease;
+            }
+
+
+            #contact .contact-right img{
+                height: 380px;
+                width: 450px;
+                margin-left: 60px;
+                alignment: center;
+                margin-top: 10rem;
+                transition: all 0.35s ease;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <!--- navbar --->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#" class="navbar-links"><img src="img/nevoa0.png" alt="logo"></a></li>
+
+                <li class="navbar-item">
+                    <a href="index.html" id="#home" class="navbar-links">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="service.html" id="#services" class="navbar-links">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="production.html" id="#production" class="navbar-links">Production</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="#contact" class="button">Let's Talk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--- end of navbar --->
+
+    <!--- Hero --->
+    <div class="main" id="home">
+       <div class="main-container">
+           <div class="main-content">
+               <h2>Swift Beats Studio</h2>
+               <h1><i class="fa-solid fa-record-vinyl"></i> <span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000" data-words='["NEW VIBES OF AFRICA"]'></span></h1>
+               <button class="main-btn"><a href="/">Contact Me</a></button>
+           </div>
+       </div>
+    </div>
+    <!--- end of Hero --->
+
+    <!--- services --->
+    <div class="services">
+        <div class="title">
+            <h1><i class="fa-solid fa-compact-disc"></i> Production & Services <i class="fa-solid fa-computer"></i></h1>
+        </div>
+
+        <div class="services-container">
+            <div class="services-card">
+                <h2><i class="fa-solid fa-microphone-lines"></i> Music Production</h2>
+                <p><i class="fa-solid fa-compact-disc"></i> Recording</p>
+                <p><i class="fa-solid fa-compact-disc"></i> Mixing</p>
+                <p><i class="fa-solid fa-compact-disc"></i> Mastering</p>
+                <h2><i class="fa-solid fa-music"></i> Beat Leases</h2>
+                <p><i class="fa-solid fa-compact-disc"></i> MP3 Lease</p>
+                <p><i class="fa-solid fa-compact-disc"></i> WAV Lease</p>
+                <p><i class="fa-solid fa-compact-disc"></i> Trackout Lease</p>
+                <button class="main-btn"><a href="#contact">Purchase Your Beat Today</a></button>
+            </div>
+            <div class="services-card">
+                <h2><i class="fa-solid fa-layer-group"></i> Graphic Design</h2>
+                <p><i class="fa-solid fa-tachograph-digital"></i> 2D Logo</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> 3D Logo</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> 3D Logo Animation</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Poster/Flyer</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Business Card</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Business Profile</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Rate Card</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Brochure</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Corporate Slideshow</p>
+                <p><i class="fa-solid fa-tachograph-digital"></i> Event Promo</p>
+                <button class="main-btn"><a href="#contact">Get Exclusive Designs</a></button>
+            </div>
+        </div>
+    </div>
+    <!--- end of services --->
+
+
+    <!---- instagram section ----->
+    <section id="insta" class="py-7">
+        <div class="container">
+            <div class="insta-content">
+                <div class="title">
+                    <h1>NEVOA Ent. Offers</h1>
+                </div>
+                <div class="insta-grid grid">
+                    <div><img src="img/tape.jpg" alt="image"><p>AUDIO PRODUCTION</p></div>
+                    <div><img src="img/video3.jpg" alt="image"><p>VIDEO PRODUCTION</p></div>
+                    <div><img src="img/beat.jpg" alt="image"><p>PRODUCTION TRAINING</p></div>
+                    <div><img src="img/deck.jpg" alt="image"><p>DJ DROPS</p></div>
+                    <div><img src="img/mic3.jpg" alt="image"><p>VOICE OVERS</p></div>
+                    <div><img src="img/logow.jpg" alt="image"><p>BEATS</p></div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!---- end of instagram section ----->
+
+    <!----- contact section ------>
+    <section id="contact" class=" py-7">
+        <div class="container">
+            <div class="contact-content flex">
+                <div class="contact-left">
+                    <div class="title">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <p class="lead"><i class="fas fa-phone-alt"></i> +254 112 032 452 | +254 756 593 596</p>
+                    <p class="lead"><i class="fas fa-envelope"></i> nevoaentertainment@gmail.com</p>
+                    <form action="https://formsubmit.co/nevoaentertainment@gmail.com" method="POST">
+                        <input type="text" class="form-control" placeholder="Your name here ...">
+                        <input type="email" class="form-control" placeholder="Your email here ...">
+                        <input type="text" class="form-control" placeholder="Your service here...">
+                        <button class="main-btn" type="submit" value="submit"><a>SUBMIT</a></button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <img src="img/bg.jpg" alt="contact image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- end of contact section ------>
+
+    <!---- footer --->
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link--wrapper">
+                <div class="footer-link--items">
+                    <h2>About Us</h2>
+                    <a href="service.html">Audio Production</a>
+                    <a href="service.html">Video Production </a>
+                    <a href="service.html">Lessons & Training</a>
+                    <a href="service.html">DJ Drops</a>
+                    <a href="service.html">Voice Overs</a>
+                </div>
+                <div class="footer-link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/nevoaentertainment254">Instagram</a>
+                    <a href="https://www.facebook.com/@newvibesofafrica1194">Facebook</a>
+                    <a href="https://www.youtube.com/@dev2545">Dev254 YouTube</a>
+                    <a href="https://www.youtube.com/@newvibesofafrica1194">NEVOA YouTube</a>
+                </div>
+                <div class="footer-link--items">
+                    <h2>Contact Us</h2>
+                    <a href="#contact"> +254 112 032 452 | +254 756 593 596</a>
+                    <a href="#contact">nevoaentertainment@gmail.com</a>
+                    <a href="#contact">Dagoretti South</a>
+                    <a href="#contact">Satellite Kabiria</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="social-media--wrap">
+                <div class="footer-logo">
+                    <a href="#home" id="footer-logo"><img src="img/nevoa1.png" alt="logo"></a>
+                </div>
+                <p class="website-rights">&copy; 2023 NEVOA ENT. | All Rights Reserved.</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/nevoaentertainment254" class="social-icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nevoaentertainment254" class="social-icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@dev2545" class="social-icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@newvibesofafrica1194" class="social-icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of footer --->
+
+    <script src="js/app.js"></script>
+    <script src="typewriting-master/typewriting.js"></script>
+</body>
+</html>
