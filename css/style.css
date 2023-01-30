@@ -28,15 +28,12 @@
     padding: 0 50px;
 }
 
-.fa-gem{
-    margin-right: 0.5rem;
-}
-
 .navbar-menu{
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
+    color: #fff;
 }
 
 .navbar-item{
