@@ -748,6 +748,9 @@
     #insta .insta-grid > div{
         height: 250px;
     }
+    .navbar{
+        background: #fff;
+    }
 }
 
 /* Mobile Responsive */
@@ -794,6 +797,9 @@
     }
     #contact .contact-left form .form-control{
         max-width: 500px;
+    }
+    .navbar{
+        background: #fff;
     }
 }
 
